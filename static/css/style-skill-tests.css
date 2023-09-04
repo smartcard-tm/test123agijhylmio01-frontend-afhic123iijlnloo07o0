@@ -1,0 +1,1269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+/* NAVBAR START*/
+.navbar {
+    margin: 0;
+    background-color: white;
+    border-bottom: 5px whitesmoke solid;
+    height: 65px;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    padding: 7px 14px 10px 22px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.logoname {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 38px;
+    color: #1464c1;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 2px;
+}
+
+.logoname:hover {
+    color: rgb(83, 83, 253);
+}
+
+.navbar-nav a {
+    padding: 0;
+    margin-top: 2px;
+}
+
+.social {
+    position: absolute;
+    display: none;
+    right: 220px;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+}
+
+.social a {
+    padding: 10px 3px;
+}
+
+.social-link {
+    width: 25px;
+    margin: 0;
+}
+
+.lang_pack {
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+}
+
+.lang_pack li {
+    display: inline-block;
+}
+
+.lang_pack a {
+    padding: 5px 3px;
+}
+
+.lang_img {
+    width: 30px;
+}
+
+.call_us {
+    display: inline-block;
+    width: 300px;
+}
+
+.call_us a {
+    display: block;
+}
+
+.side-nav {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 70px;
+    transition: 0.1s;
+    border-right: 0.5px rgb(243, 242, 242) solid;
+}
+
+.side-nav a {
+    padding: 20px 0 0 10%;
+    text-decoration: none;
+    font-size: 18px;
+    color: #034ea3;
+    display: block;
+    transition: 0.5s;
+}
+
+.side-nav a:first-child {
+    padding-top: 38px;
+}
+
+.side-nav-logo {
+    display: inline-block;
+    width: 30px;
+}
+
+.side-nav-qr {
+    width: 100px;
+    margin-left: 0px;
+}
+
+.side-nav-logoname {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.side-nav a:hover {
+    color: rgb(83, 83, 253);
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    color: rgba(19, 19, 187, 0.856);
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+}
+
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.back-btn-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px #edeff0;
+}
+
+.main-menu {
+    height: 70vh;
+}
+
+.bottom-main-menu {
+    height: 30vh;
+}
+
+#btnContact1 {
+    padding: 10px 12px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #1464c1;
+    border-radius: 10px;
+}
+
+/* NAVBAR END */
+
+/* Sticky Menu */
+.top-sticky-menu {
+    z-index: 1;
+}
+
+.sticky-line-height {
+    height: auto;
+    line-height: 40px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: #1464c1;
+    vertical-align: middle;
+}
+
+.sticky-link {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.sticky-link:hover {
+    color: rgb(233, 233, 233);
+}
+
+.sticky-inline-icon {
+    vertical-align: middle !important;
+    font-size: 20px !important;
+    margin-right: 2px !important;
+    margin-bottom: 3px !important;
+}
+
+/* End Sticky Menu */
+
+/* Start Main content */
+.main-content {
+    overflow: auto;
+    padding-top: 65px;
+    padding-bottom: 7px;
+    margin-bottom: -10px;
+}
+
+.search-container {
+    height: 140px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+
+.search-header {
+    display: block;
+    margin-left: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #1464c1;
+}
+
+.search-btn-block {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.search-input {
+    display: inline-block !important;
+    border: 1px solid #333 !important;
+    width: 40% !important;
+    margin-left: 23% !important;
+    border-radius: 5px;
+}
+
+.search-btn-block a {
+    display: inline-block;
+    width: auto;
+}
+
+.main-filter-icon {
+    vertical-align: middle;
+    font-size: 20px !important;
+    padding: 11px;
+    border: 1px solid #333;
+    margin-bottom: 2px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.search-btn {
+    display: inline-block !important;
+    width: auto;
+    border-radius: 5px !important;
+}
+
+.job-container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.job-header {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    color: #1464c1;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.consulting-details {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    display: block;
+    width: 87%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.about-us-image {
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.about-us-image img {
+    display: block;
+    width: 94%;
+    object-fit: contain;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+
+.all-certificates {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.certificate-img {
+    display: inline-block;
+}
+
+.certificate-img img {
+    width: 180px;
+    padding: 5px 10px;
+}
+
+.our-history {
+    display: table;
+    width: 90%;
+    margin-left: 5%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    margin-top: -10px;
+}
+
+.history-card {
+    display: table-cell;
+    text-align: center;
+    box-shadow: 0 2px 12px #edeff0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.his-year p{
+    margin: 15px auto 10px;
+    font-size:18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.his-txt {
+    color: black;
+    letter-spacing: 0.5px;
+}
+
+.pass-test-btn {
+    display: block;
+    width: 80%;
+    margin: 0 auto 15px;
+    text-decoration: none;
+    background-color: #1464c1;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.job-apply {
+    width: 200px !important;
+}
+
+.job-show-contact {
+    background-color: #f44336 !important;
+    color: white !important;
+    width: 200px;
+}
+
+
+.job-icon {
+    vertical-align: bottom;
+    font-size: 20px !important;
+    margin-right: 5px;
+    color: rgb(96, 96, 96) !important;
+}
+
+@media (max-width:750px) {
+    .main-content {
+        padding-top: 65px;
+    }
+
+    .certificate-img {
+        display: block;
+    }
+
+    .certificate-img img {
+        width: 120px;
+    }
+
+    .bottomMenu {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: 0 !important;
+    }
+}
+
+/* end of main content */
+
+/* Start footer */
+.footer {
+    width: 100%;
+    background-color: #1a2e53;
+    text-align: center;
+    color: white;
+    padding: 25px 10px 8px;
+    font-size: 16px;
+}
+
+.phone-num {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_content {
+    display: flex;
+}
+
+.footer-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.phones {
+    width: 35%;
+    margin-right: 15%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.address {
+    width: 40%;
+    text-align: left;
+}
+
+/* Filter Modal */
+.modal-filter {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/ opacity */
+    padding-top: 60px;
+    color: rgb(85, 83, 83);
+    font-size: 16px;
+}
+
+.salary-input {
+    border: 1px solid #333 !important;
+    border-radius: 5px;
+}
+
+.region-container {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.region-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+.region-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.region-container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.region-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.region-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* End Filter Modal */
+
+@media (min-width:940px) {
+    .phones {
+        margin-left: 20%;
+        margin-right: 5%;
+    }
+}
+
+/* .working {
+    width: 30%;
+    text-align: left;
+} */
+
+.p-address {
+    cursor: pointer;
+}
+
+.inline-icon-footer {
+    vertical-align: bottom;
+    font-size: 20px !important;
+    margin-right: 5px;
+}
+
+.footer-social {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-social-icons {
+    padding-bottom: 20px;
+}
+
+
+.social-icons {
+    display: inline-block;
+    width: 28px;
+    margin-right: 3px;
+}
+
+/* end footer */
+
+/* Call Modal window */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    font-size: 12px;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Call Modal Content */
+.modal-content {
+    position: relative;
+    /* background-color: #1a2e53; */
+    background-color: #1464c1;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+.modal-content p {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.phone-num-modal {
+    text-decoration: none;
+    color: white;
+}
+
+.inline-icon-modal {
+    vertical-align: bottom;
+    font-size: 22px !important;
+    margin-right: 7px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* end of Call Modal window */
+
+/* Start of Login Modal */
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #1464c1;
+    box-sizing: border-box;
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+    border-bottom: 1px solid #1a2e53;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #1464c1;
+    color: white;
+    font-size: 16px;
+    padding: 14px 20px;
+    margin: 8px 0 4px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.registerbtn {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 4px 0 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 2px 0 2px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 50px;
+}
+
+
+span.psw {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+span.psw a {
+    text-decoration: none;
+    color: #1464c1;
+}
+
+span.psw a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 10px;
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: #1464c1;
+    /* Black w/ opacity */
+    padding-top: 60px;
+    color: #1464c1;
+    font-size: 16px;
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close1 {
+    display: block;
+    text-align: right;
+    color: #1464c1;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: blue;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* End Login Modal */
+
+/* Start Signup Modal */
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    width: 100%;
+    display: block;
+}
+
+/* Add padding to container elements */
+.container2 {
+    padding: 25px;
+}
+
+/* The Modal (background) */
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #1464c1;
+    padding-top: 50px;
+    z-index: 5;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 3% auto 17% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close2 {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close2:hover,
+.close2:focus {
+    color: white;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+/* End Signup Modal */
+
+/* Start Address Modal */
+.modal3 {
+    display: none;
+    /* Hidden by default */
+    font-size: 12px;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 70px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6)
+        /* Black w/ opacity */
+}
+
+/* Call Modal Content */
+.modal-content3 {
+    position: relative;
+    /* background-color: #1a2e53; */
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.container3 {
+    height: auto;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+.container3 img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.address-link {
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    background-color: #1464c1;
+    color: white;
+    width: 90%;
+    margin: 10px auto 20px;
+    font-size: 16px;
+}
+
+.address-link:hover {
+    opacity: 0.9;
+}
+
+/* End Address Modal */
+
+/* Media 750 */
+@media (min-width:750px) {
+
+    .navbar {
+        width: 100%;
+        height: 65px;
+        border-bottom: 5px whitesmoke solid;
+    }
+
+    .social {
+        display: inline-block;
+    }
+
+
+    .side-nav a:first-child {
+        padding-top: 40px;
+    }
+
+    .side-nav-logo {
+        width: 40px;
+    }
+
+    .side-nav-logoname {
+        font-size: 36px;
+        padding-bottom: 3px;
+    }
+
+    .social-icons {
+        margin-right: 2px;
+    }
+
+    .job-container {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .job-card {
+        margin: 10px auto;
+        padding: 20px 40px;
+        box-shadow: 0 2px 12px #edeff0;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+
+    .modal-content1 {
+        width: 400px;
+    }
+
+    .modal-content2 {
+        width: 400px;
+    }
+
+    .modal-content3 {
+        width: 500px;
+    }
+}
+
+/* end media min 750 */
+
+@media (max-width:920px) {
+    .history-card {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .history-card:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1180px) {
+
+    .consulting-image {
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .job-header {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width:601px) and (max-width:749px) {
+    .modal-content1 {
+        width: 400px;
+    }
+
+    .modal-content2 {
+        width: 400px;
+    }
+
+    .modal-content3 {
+        width: 500px;
+    }
+}
+
+/* Start media size 600px and less */
+@media (max-width:600px) {
+    .logo-img {
+        width: 30px;
+        margin-top: 6px;
+    }
+
+    .logoname {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .job-card {
+        padding: 10px;
+    }
+
+
+
+    .search-container {
+        height: 195px;
+    }
+
+    .search-header {
+        margin: 0;
+        text-align: center;
+    }
+
+    .search-input {
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-bottom: 1px !important;
+    }
+
+    .search-btn-block a {
+        margin-left: 5%;
+        width: 5%;
+        margin-right: 30px;
+    }
+
+    .search-btn {
+        width: 74.5% !important;
+    }
+
+
+    .footer_content {
+        display: block;
+    }
+
+    .address {
+        width: 97%;
+        margin-left: 3%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .phones {
+        width: 97%;
+        margin-left: 3%;
+        margin-top: 30px;
+    }
+
+    /* .working {
+        width: 97%;
+        margin-left: 3%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    } */
+
+    .footer-social-icons:first-child {
+        margin-left: 0px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+
+}
+
+/* End media size 600px and less */
+
+/* Start media size 360px and less */
+@media (max-width:360px) {
+    .side-nav a {
+        font-size: 16px;
+    }
+
+    .inline-icon {
+        font-size: 20px !important;
+    }
+
+    .lang_pack {
+        margin-top: 0px;
+        right: 26px;
+    }
+
+    .lang_img {
+        width: 24px;
+    }
+
+}
+
+/* End media size 360px and less */
+
+/* Start media size 280px and less */
+@media (max-width:280px) {
+    .lang_pack {
+        right: 20px;
+    }
+
+    .logoname {
+        display: none;
+    }
+
+}
+
+/* End media size 280px and less */
