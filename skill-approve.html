@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="128x128" href="static/images/fav-icon.png">
+    <title>ORLAN</title>
+</head>
+<body>
+  <nav class="navbar-skill-approve">
+    <span class="open-slide">
+      <a style="margin-top: 10px" href="#" onclick="openSideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,14 25,14" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,23 20,23" stroke="#1464c1" stroke-width="4" />
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">  
+      <a href="index.html">
+        <li style="display:inline-block;"><img class="logo-img" src="static/images/logo1.png" alt="Logo"/></li>
+        <li class="logoname">ORLAN</li>
+      </a>      
+      <div class="social">   
+        <li><a href="#" id="btnContact"><img class="social-link" src="static/images/social-icons/phone.png" alt="call"/></a></li> 
+        <li><a href="https://www.instagram.com/orlantm" target="_blank"><img class="social-link" src="static/images/social-icons/instagram.png" alt="instagram"/></a></li>   
+        <li><a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-link" src="static/images/social-icons/linkedin.png" alt="linkedin"/></a></li>   
+        <li><a href="https://www.facebook.com/orlantm/" target="_blank"><img class="social-link" style="margin-right:10px;" src="static/images/social-icons/facebook.png" alt="facebook"/></a></li>   
+      </div>      
+      <div class="lang_pack">          
+        <li><a href="#"><img class="lang_img" src="static/images/ru.png" alt="lang_img"/></a></li>   
+        <li><a href="#"><img class="lang_img" src="static/images/tm.png" alt="lang_img"/></a></li>   
+        <li><a href="#" style="margin-right:5px;"><img class="lang_img" src="static/images/en.png" alt="lang_img"/></a></li>   
+        <li><a href="#" id="btn-login"><img class="lang_img" src="static/images/user-default.png" alt="user_img"/></a></li>   
+      </div>          
+    </ul>
+  </nav>
+
+ <div id="side-menu" class="side-nav"> 
+    <div class="main-menu">
+      <a href="#" class="btn-close" onclick="closeSideMenu()" ><div class="back-btn-close"><img src="static/images/previous.png" alt="back-arrow" style="width:40px;"></div></a>
+      <a href="index.html"><img class="side-nav-logo" src="static/images/logo1.png" alt="Logo"/><span class="side-nav-logoname">ORLAN</span></a>
+      <a href="profile.html">Рустам Каррыев<span style="display:block;color:rgb(128, 126, 126); font-size:14px">+993 67101525</span></a>
+      <a href="index.html"><i class="material-icons inline-icon">home</i>На главную</a>
+      <a href="profile.html"><i class="material-icons inline-icon">manage_accounts</i>Личный кабинет</a>
+      <a href="#"><i class="material-icons inline-icon">credit_card</i>Платежные карты</a>
+      <a href="#"><i class="material-icons inline-icon">favorite</i>Избранное</a>
+      <a href="about-us.html"><i class="material-icons inline-icon">receipt_long</i>О нас</a> 
+    </div>     
+    <div class="bottom-main-menu">
+      <a href="#" id="btnContact1">Связаться с нами</a>   
+      <a href="#" style="margin-left:6%; padding-top:10px;"><i class="material-icons inline-icon">logout</i>Выйти из системы</a>
+    </div>   
+  </div>   
+  
+  <div class="main-content">
+    <div class="job-container-skill-approve">
+      <div class="job-card-skill-approve">
+        <p style="margin:0 15px; "><a style="text-decoration:none; font-size:36px; color:#1464c1; cursor: pointer;" href="skill-tests.html">&larr;</a></p>        
+        <p class="job-header-skill-approve">HTML ТЕСТ</p>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h3 id="quiz-question" style="text-align:center">Question</h3>
+                <ul class="quiz-ul">
+                    <li class="quiz-li">
+                        <input type="radio" id="a" name="answer" class="answer">
+                        <label for="a" id="a_text">Answer</label>
+                    </li>
+                    <li class="quiz-li">
+                        <input type="radio" id="b" name="answer" class="answer">
+                        <label for="b" id="b_text">Answer</label>
+                    </li>
+                    <li class="quiz-li">
+                        <input type="radio" id="c" name="answer" class="answer">
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+                    <li class="quiz-li">
+                        <input type="radio" id="d" name="answer" class="answer">
+                        <label for="d" id="d_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submitBtn" style=" margin-bottom:25px;">Подтвердить</button>
+        </div>  
+      </div>
+    </div>
+  </div>
+<!-- Footer Start -->
+  <div class="footer">      
+    <div class="footer_content">     
+      <div class="phones">
+        <p class="footer-header">КАДРОВОЕ АГЕНСТВО:</p>          
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-04-37">+993 12 94-04-37</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-26-34">+993 12 94-26-34 </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 65 56-78-19">+993 65 56-78-19</a>
+        </p>         
+        <p>
+          <a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: operator@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-19:00
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб: 09:00-14:00; Вс: Выходной
+        </p>  
+        <p>
+          <span id="btn-address2" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>пр. Махтумкули, 73
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>ТЦ «Туркменистан», офис 61
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан.
+          </span>
+        </p> 
+      </div>
+      <div class="address">
+        <p class="footer-header">ЦЕНТР РАЗВИТИЯ И КОНСАЛТИНГ:</p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-86">+993 12 96-49-86</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-87">+993 12 96-49-87</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 63 10-59-21">+993 63 10-59-21</a>
+        </p>          
+        <p>
+          <a href="mailto:info@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: info@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-18:00
+        </p>
+         <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб/Вс: Выходной
+        </p>
+        <p>
+          <span id="btn-address1" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>ул. 1946 (Анкара), 23
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>БЦ «Рысгал», офис 810
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан. 
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">            
+      <p style="margin-bottom:5px;">Подпишитесь и будьте в курсе интересных событий</p>
+      <div class="footer-social-icons">  
+        <a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-icons" style="margin-right:4px;" src="static/images/social-icons/linkedin.png" alt="icon"></a>
+        <a href="https://www.instagram.com/orlantm"  target="_blank"><img class="social-icons" src="static/images/social-icons/instagram-footer.png" alt="icon"></a>       
+        <a href="https://www.facebook.com/orlantm/"  target="_blank"><img class="social-icons" src="static/images/social-icons/facebook.png" alt="icon"></a>              
+      </div>
+    </div>      
+    <hr>
+    <p style="margin-top:20px;">&copy; Все права защищены “ORLAN” 2023</p>
+  </div>
+
+  <!-- End of Footer -->
+
+  
+   <!-- Notification Modal -->
+   <div id="id-notify" class="modal-filter">        
+    <form class="modal-content1 animate" action="" method="post">
+        <div class="imgcontainer"> 
+            <p>Тест состоит из 15 вопросов. Для ответа на каждый вопрос будет даваться одна минута.</p>           
+            <p>Пожалуйста, убедитесь, что у вас хорошее интернет-соединение.</p>
+        </div>
+        <div class="container">           
+            
+        <a class="btn-close-notification" onclick="document.getElementById('id-notify').style.display='none'">Продолжить</a>            
+        </div>                
+    </form>
+  </div>  
+  <!-- End Notification Modal -->
+
+   <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="close_btn" class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p class="modal-service-name">ЦЕНТР РАЗВИТИЯ И КОНСАЛТИНГ:</p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel:+993 12 96-49-86">+993 12 96-49-86</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel:+993 12 96-49-87">+993 12 96-49-87</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Моб: <a class="phone-num-modal" href="tel:+993 63 10-59-21">+993 63 10-59-21</a></p>
+        <p><a href="mailto:info@orlan.org" style="text-decoration:none; color:inherit"><i class="material-icons inline-icon-modal">email</i>info@orlan.org</a></p>        
+        <br>
+        <p class="modal-service-name">КАДРОВОЕ АГЕНСТВО:</p>        
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-04-37"> +993 12 94-04-37</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-26-34"> +993 12 94-26-34</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Моб: <a class="phone-num-modal" href="tel: +993 65 56-78-19"> +993 65 56-78-19</a></p>
+        <p><a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit"><i class="material-icons inline-icon-modal">email</i>operator@orlan.org</a></p>
+      </div>       
+    </div>
+  </div>
+
+  <!-- End of the Modal window -->
+
+  <!-- Login Modal window -->
+  <div id="id01" class="modal1">        
+    <form class="modal-content1 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            
+            <img src="static/images/logo1.png" alt="Logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <input type="text" placeholder="Номер телефона" name="u_phone" required>
+
+            <input type="password" placeholder="Пароль" name="u_psw" required>
+            <span class="psw"><a href="#">Забыли пароль?</a></span>   
+            <button type="submit">Войти</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="registerbtn">Регистрация</button>
+            
+        </div>                
+    </form>
+  </div>  
+  <!-- End of the Login Modal window -->
+
+  <!-- Signup Modal -->
+  <div id="id02" class="modal2">
+    
+    <form class="modal-content2 animate" action="">        
+      
+      <div class="container2">
+        <img src="static/images/logo1.png" alt="Logo" style="display:block; margin:0 auto; width:50px;">
+        <h1 style="margin-top:5px; margin-bottom:5px;text-align:center">Регистрация</h1>
+
+        <input type="text" placeholder="Ваше имя" name="name" required>
+
+        <input type="text" placeholder="Ваш номер" name="phone" required>
+
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+
+        <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+        
+        <p>Создавая учетную запись, вы соглашаетесь с<br><a href="#" style="color:dodgerblue">условиями и политикой конфиденциальности</a>.</p>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Регистрация</button>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- End Signup Modal -->
+
+  <!-- Address Modal -->
+   <div id="id03" class="modal3">        
+    <form class="modal-content3 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close1" title="Close Modal" style="margin:15px;">&times;</span>
+        </div>
+
+        <div class="container3">          
+          <img src="" id="address-id" alt="img"> 
+          <a href="" class="address-link" id="address-btn" target="_blank" >Посмотреть в Google Map</a>           
+        </div>                
+    </form>
+  </div>  
+  <!-- End Address Modal -->
+  
+</body>
+<script src="static/js/menu.js"></script>
+<script src="static/js/modal-window.js"></script>
+<script src="static/js/show-login-modal.js"></script>
+<script src="static/js/address-modal.js"></script>
+<script src="static/js/dropdown-list.js"></script>
+<script src="static/js/notify-modal.js"></script>
+<script src="static/js/quiz-script.js"></script>
+</html>

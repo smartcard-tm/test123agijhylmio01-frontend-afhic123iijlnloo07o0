@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="128x128" href="static/images/fav-icon.png">
+    <title>ORLAN</title>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a style="margin-top: 10px" href="#" onclick="openSideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,14 25,14" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,23 20,23" stroke="#1464c1" stroke-width="4" />
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">  
+      <a href="#">
+        <li style="display:inline-block;"><img class="logo-img" src="static/images/logo1.png" alt="Logo"/></li>
+        <li class="logoname">ORLAN</li>
+      </a>      
+      <div class="social">   
+        <li><a href="#" id="btnContact"><img class="social-link" src="static/images/social-icons/phone.png" alt="call"/></a></li> 
+        <li><a href="https://www.instagram.com/orlantm" target="_blank"><img class="social-link" src="static/images/social-icons/instagram.png" alt="instagram"/></a></li>   
+        <li><a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-link" src="static/images/social-icons/linkedin.png" alt="linkedin"/></a></li>   
+        <li><a href="https://www.facebook.com/orlantm/" target="_blank"><img class="social-link" style="margin-right:10px;" src="static/images/social-icons/facebook.png" alt="facebook"/></a></li>   
+      </div>      
+      <div class="lang_pack">          
+        <li><a href="#"><img class="lang_img" src="static/images/ru.png" alt="lang_img"/></a></li>   
+        <li><a href="#"><img class="lang_img" src="static/images/tm.png" alt="lang_img"/></a></li>   
+        <li><a href="#" style="margin-right:5px;"><img class="lang_img" src="static/images/en.png" alt="lang_img"/></a></li>   
+        <li><a href="#" id="btn-login"><img class="lang_img" src="static/images/user-default.png" alt="user_img"/></a></li>   
+      </div>       
+    </ul>    
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <div class="main-menu">
+      <a href="#" class="btn-close" onclick="closeSideMenu()" ><div class="back-btn-close"><img src="static/images/previous.png" alt="back-arrow" style="width:40px;"></div></a>
+      <a href="#"><img class="side-nav-logo" src="static/images/logo1.png" alt="Logo"/><span class="side-nav-logoname">ORLAN</span></a>
+      <a href="profile.html">Рустам Каррыев<span style="display:block;color:rgb(128, 126, 126); font-size:14px">+993 67101525</span></a>
+      <a href="profile.html"><i class="material-icons inline-icon">manage_accounts</i>Личный кабинет</a>
+      <a href="#"><i class="material-icons inline-icon">credit_card</i>Платежные карты</a>
+      
+      <a href="#"><i class="material-icons inline-icon">favorite</i>Избранное</a>
+      <a href="about-us.html"><i class="material-icons inline-icon">receipt_long</i>О нас</a> 
+    </div> 
+    
+    <div class="bottom-main-menu">
+      <a href="#" id="btnContact1">Связаться с нами</a>   
+      <a href="#"><i class="material-icons inline-icon">logout</i>Выйти из системы</a>
+    </div> 
+  </div>    
+
+  <div class="content">
+    <div class="main">
+      <section class="sections banner">
+        <p class="text-block" onload="showSlides()">Работа найдётся для каждого</p> 
+        <a href="open-vacancies.html" class="btn top-btn">
+            <div class="card-inner">
+                <div class="card-txt-top">ОТКРЫТЫЕ ВАКАНСИИ</div>
+                <div class="card-icon-wide"><i class="material-icons card-inline-icon1">search</i></div>
+            </div>
+        </a>
+        <div id="banner-hidden">
+          <img id="banner-img"  style="height:225px; width:340px; border-radius:20px; margin-top:10px;" src="static/images/banner0.jpg" alt="img"> 
+        </div>
+        <div class="banner-container mySlides fade">        
+            <img id="banner-img" src="static/images/banner0.jpg" alt="img">        
+        </div>
+        <div class="banner-container mySlides fade">        
+            <img id="banner-img" src="static/images/banner2.jpg" alt="img">        
+        </div>
+        <div class="banner-container mySlides fade">        
+            <img id="banner-img" src="static/images/banner1.jpg" alt="img">        
+        </div>
+        <div class="banner-container mySlides fade">        
+            <img id="banner-img" src="static/images/banner3.jpg" alt="img">        
+        </div>
+        <div class="banner-container mySlides fade">        
+            <img id="banner-img" src="static/images/banner4.jpg" alt="img">        
+        </div>
+      </section>
+      <section class="sections cards">
+        <p class="text-block txt-card">Работа найдётся для каждого</p> 
+        
+        <a href="open-vacancies.html" class="btn bottom-btn">
+            <div class="card-inner">
+                <div class="card-txt-top">ОТКРЫТЫЕ ВАКАНСИИ</div>
+                <div class="card-icon-wide"><i class="material-icons card-inline-icon1">search</i></div>
+            </div>
+        </a>
+
+        <a href="search-job.html" class="card card-left">
+            <div class="card-inner">
+                <div class="card-icon icon-lft"><i class="material-icons card-inline-icon">search</i></div>
+                <div class="card-txt-left">Ищу работу</div> 
+            </div>                    
+        </a>
+
+        <a href="search-an-employee.html" class="card card-right">
+            <div class="card-inner">                        
+                <div class="card-txt-right">Ищу сотрудника</div> 
+                <div class="card-icon icon-rgt"><i class="material-icons card-inline-icon">person_search</i></div>                       
+            </div>                                        
+        </a>
+
+        <a href="consulting.html" class="card card-left1">
+            <div class="card-inner">
+                <div class="card-icon icon-lft1"><i class="material-icons card-inline-icon">headset_mic</i></div>
+                <div class="card-txt-left1">Консалтинг</div>                        
+            </div>                    
+        </a>
+
+        <a href="development-center.html" class="card card-right1">
+            <div class="card-inner">
+                <div class="card-txt-right1">Центр Развития</div>
+                <div class="card-icon icon-rgt1"><i class="material-icons card-inline-icon">school</i></div>
+            </div>                    
+        </a>
+
+        <a href="outstaffing.html" class="btn employer">                    
+              <div class="card-inner">
+                <div class="card-txt-bottom">Аутстаффинг & Аутсорсинг</div>
+                <div class="card-icon-wide icon-btm"><i class="material-icons card-inline-icon">group</i></div>
+            </div>
+        </a>
+
+        <a href="training-detail.html" class="star-training" style="display: block; z-index:2;"><i class="material-icons inline-icon training-icon">bolt</i>Тренинг: Основы международных грузоперевозок</a>
+      </section>
+      <section class="info animate1">                             
+          <div class="info-txt">
+              <span class="info-num">10080</span>
+              <span>трудоустроенных</span>
+          </div>             
+          <div class="info-txt">
+              <span class="info-num">5133</span>
+              <span>клиентов</span>
+          </div>     
+          <div class="info-txt">
+              <span class="info-num">37</span>
+              <span>проектов</span>
+          </div> 
+          <div class="info-txt">
+              <span class="info-num">104</span>
+              <span>на аутстаффинге</span>
+          </div>  
+          <div class="info-txt">
+              <span class="info-num">745</span>
+              <span>тренингов</span>
+          </div> 
+          <div class="info-txt">
+              <span class="info-num">52298</span>
+              <span>соискателей</span>
+          </div> 
+      </section>                 
+    </div>      
+  </div>
+
+  
+  <div class="bottomMenu1 hide top-sticky-menu" id="stickyMenu">
+    <div class="sticky-line-height">
+      <div class="sticky-inner-div">
+        <a href="search-job.html" class="sticky-link">
+          <i class="material-icons sticky-inline-icon">search</i>
+           ИЩУ РАБОТУ
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="search-an-employee.html" class="sticky-link">
+          <i class="material-icons sticky-inline-icon">person_search</i>
+          ИЩУ СОТРУДНИКА
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="consulting.html" class="sticky-link">
+          <i class="material-icons sticky-inline-icon">headset_mic</i>
+          КОНСАЛТИНГ
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="development-center.html" class="sticky-link sticky-school">
+          <i class="material-icons sticky-inline-icon">school</i>
+          ЦЕНТР РАЗВИТИЯ
+        </a>
+      </div>
+    </div>    
+  </div> 
+
+  <div class="partners">
+    <p class="text-block partners-header">НАШИ КЛИЕНТЫ И ПАРТНЕРЫ</p>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/petronas-logo.svg" alt="logo">
+    </div>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/bouygues-logo.svg" alt="logo">
+    </div>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/mitshubishi-logo.svg" alt="logo">
+    </div>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/hyundai-logo.svg" alt="logo">
+    </div>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/osce-logo.svg" alt="logo">
+    </div>
+    <div class="partners-logo">
+      <img src="static/images/partner-logos/dragonoil-logo.svg" alt="logo">
+    </div>
+  </div>
+
+  <div class="applicants">
+    <a href="open-vacancies.html" class="attenition-link">
+    <p class="text-block attention">КАДРОВОЕ АГЕНТСТВО</p>
+    <p>
+      Компания «ORLAN» не берет 
+      деньги за свои услуги заранее. Вы оплачиваете услуги «ORLAN» только
+      после трудоустройства.
+    </p>
+    </a>
+  </div>
+  <div class="applicants">
+    <a href="development-center.html" class="attenition-link">
+    <p class="text-block attention">ЦЕНТР РАЗВИТИЯ</p>
+    <p>
+      Улучшайте свои знания. Расширяйте свои горизонты, чтобы достичь больших результатов в работе, в бизнесе, в жизни.
+    </p>
+    </a>
+  </div>
+  <div class="applicants">
+    <a href="consulting.html" class="attenition-link">
+    <p class="text-block attention">КОНСАЛТИНГ</p>
+    <p>
+      Хотите открыть свой новый бизнес, но не знаете как? Или желаете оптимизировать и масштабировать
+      свой бизнес? Мы вам поможем.
+    </p>
+    </a>
+  </div>
+  <div class="applicants">
+    <a href="outstaffing.html" class="attenition-link">
+    <p class="text-block attention">АУТСТАФФИНГ & АУТСОРСИНГ</p>
+    <p>
+      Вам нужен достойный сотрудник, представитель, работник, помощник?
+      Но не хотите заниматься бюрократией? Мы возьмём это на себя.
+    </p>
+    </a>
+  </div>
+  <div class="applicants result">
+    <p class="text-block attention">Результат деятельности <br> компании «ORLAN»</p>      
+  </div>
+
+  <div class="stats">
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">badge</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>10080</span>
+            </div>
+            <div class="stats-txt">
+            <span>трудоустроенных</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">group</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>5133</span>
+            </div>
+            <div class="stats-txt">
+            <span>клиентов</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">task_alt</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>37</span>
+            </div>
+            <div class="stats-txt">
+            <span>проектов</span>
+            </div>
+        </div>
+      </div>
+    </div>      
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">engineering</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>104</span>
+            </div>
+            <div class="stats-txt">
+            <span>на аутстаффинге</span>
+            </div>
+        </div>
+      </div>
+    </div>      
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">school</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>745</span>
+            </div>
+            <div class="stats-txt">
+            <span>тренингов</span>
+            </div>
+        </div>
+      </div>
+    </div>      
+    <div class="sep-stat">
+      <div class="stats-info">
+        <div class="stats-icon">
+          <span><i class="material-icons material-stats-icon">pageview</i></span>
+        </div>
+        <div class="stats-num-txt">            
+            <div class="stats-num">
+            <span>52298</span>
+            </div>
+            <div class="stats-txt">
+            <span>соискателей</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us  -->
+  <div class="applicants" style="margin-bottom:10px;">
+      <a href="about-us.html" class="attenition-link">
+        <p class="text-block attention">МЫ ТАКЖЕ</p>    
+      </a>
+      
+      <div class="award-pc">
+        <div class="orlan-award">
+          <div class="award-icon">
+            <img src="static/images/award-icon-blue.svg" alt="award-img">
+          </div>
+          <div class="award-icon">
+            <img src="static/images/award-icon-blue.svg" alt="award-img">
+          </div>
+          <div class="award-icon">
+            <img src="static/images/award-icon-blue.svg" alt="award-img">
+          </div>        
+        </div>
+        <div class="orlan-award-txt">                  
+          <div class="award-txt">
+            <p>            
+              Консультант Европейского Банка Реконструкции и Развития
+            </p>
+          </div>                
+          <div class="award-txt">
+            <p>
+              Член Союза Экономистов
+            </p>
+          </div>
+          <div class="award-txt">
+            <p>
+              Член Союза Промышленников и Предпринимателей
+            </p>
+          </div> 
+        </div> 
+        <a href="about-us.html" class="btn-award">ПОДРОБНЕЕ О НАС...</a>
+      </div> 
+      
+      <div class="award-mobile">
+        <div class="mb-award-icon" style="margin-top:5px;">
+          <img src="static/images/award-icon-blue.svg" alt="award-img">
+          <p>Консультант Евпропейского Банка Реконструкции и Развития</p>
+        </div>
+        <div class="mb-award-icon">
+          <img src="static/images/award-icon-blue.svg" alt="award-img">
+          <p>Член Союза Промышленников и Предпринимателей</p>
+        </div>  
+        <div class="mb-award-icon" style="margin-top:-10px">
+          <img src="static/images/award-icon-blue.svg" alt="award-img">
+          <p>Член Союза Экономистов</p>
+        </div>      
+        <a href="about-us.html" class="btn-award" style="margin-bottom:15px;">ПОДРОБНЕЕ О НАС...</a>
+      </div>
+  </div>
+  <!-- End of About Us  -->
+
+  <!-- Footer Start -->
+  <div class="footer">      
+    <div class="footer_content">     
+      <div class="phones">
+        <p class="footer-header">КАДРОВОЕ АГЕНСТВО:</p>          
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-04-37">+993 12 94-04-37</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-26-34">+993 12 94-26-34 </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 65 56-78-19">+993 65 56-78-19</a>
+        </p>         
+        <p>
+          <a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: operator@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-19:00
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб: 09:00-14:00; Вс: Выходной
+        </p>  
+        <p>
+          <span id="btn-address2" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>пр. Махтумкули, 73
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>ТЦ «Туркменистан», офис 61
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан.
+          </span>
+        </p> 
+      </div>
+      <div class="address">
+        <p class="footer-header">ЦЕНТР РАЗВИТИЯ И КОНСАЛТИНГ:</p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-86">+993 12 96-49-86</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-87">+993 12 96-49-87</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 63 10-59-21">+993 63 10-59-21</a>
+        </p>          
+        <p>
+          <a href="mailto:info@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: info@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-18:00
+        </p>
+         <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб/Вс: Выходной
+        </p>
+        <p>
+          <span id="btn-address1" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>ул. 1946 (Анкара), 23
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>БЦ «Рысгал», офис 810
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан. 
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">            
+      <p style="margin-bottom:5px;">Подпишитесь и будьте в курсе интересных событий</p>
+      <div class="footer-social-icons">  
+        <a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-icons" style="margin-right:4px;" src="static/images/social-icons/linkedin.png" alt="icon"></a>
+        <a href="https://www.instagram.com/orlantm"  target="_blank"><img class="social-icons" src="static/images/social-icons/instagram-footer.png" alt="icon"></a>       
+        <a href="https://www.facebook.com/orlantm/"  target="_blank"><img class="social-icons" src="static/images/social-icons/facebook.png" alt="icon"></a>              
+      </div>
+    </div>      
+    <hr>
+    <p style="margin-top:20px;">&copy; Все права защищены “ORLAN” 2023</p>
+  </div>
+
+  <!-- End of Footer -->
+
+   <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span  id="close_btn" class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p class="modal-service-name">ЦЕНТР РАЗВИТИЯ И КОНСАЛТИНГ:</p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel:+993 12 96-49-86">+993 12 96-49-86</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel:+993 12 96-49-87">+993 12 96-49-87</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Моб: <a class="phone-num-modal" href="tel:+993 63 10-59-21">+993 63 10-59-21</a></p>
+        <p><a href="mailto:info@orlan.org" style="text-decoration:none; color:inherit"><i class="material-icons inline-icon-modal">email</i>info@orlan.org</a></p>        
+        <br>
+        <p class="modal-service-name">КАДРОВОЕ АГЕНСТВО:</p>        
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-04-37"> +993 12 94-04-37</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-26-34"> +993 12 94-26-34</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Моб: <a class="phone-num-modal" href="tel: +993 65 56-78-19"> +993 65 56-78-19</a></p>
+        <p><a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit"><i class="material-icons inline-icon-modal">email</i>operator@orlan.org</a></p>
+      </div>       
+    </div>
+  </div>
+
+  <!-- End of the Modal window -->
+
+  <!-- Login Modal window -->
+  <div id="id01" class="modal1">        
+    <form class="modal-content1 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            
+            <img src="static/images/logo1.png" alt="Logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <input type="text" placeholder="Номер телефона" name="u_phone" required>
+
+            <input type="password" placeholder="Пароль" name="u_psw" required>
+            <span class="psw"><a href="#">Забыли пароль?</a></span>   
+            <button type="submit">Войти</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="registerbtn">Регистрация</button>
+            
+        </div>                
+    </form>
+  </div>  
+  <!-- End of the Login Modal window -->
+
+  <!-- Signup Modal -->
+  <div id="id02" class="modal2">
+    
+    <form class="modal-content2 animate" action="">        
+      
+      <div class="container2">
+        <img src="static/images/logo1.png" alt="Logo" style="display:block; margin:0 auto; width:50px;">
+        <h1 style="margin-top:5px; margin-bottom:5px;text-align:center">Регистрация</h1>
+
+        <input type="text" placeholder="Ваше имя" name="name" required>
+
+        <input type="text" placeholder="Ваш номер" name="phone" required>
+
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+
+        <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+        
+        <p>Создавая учетную запись, вы соглашаетесь с<br><a href="#" style="color:dodgerblue">условиями и политикой конфиденциальности</a>.</p>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Регистрация</button>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- End Signup Modal -->
+
+  <!-- Address Modal -->
+   <div id="id03" class="modal3">        
+    <form class="modal-content3 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close1" title="Close Modal" style="margin:15px;">&times;</span>
+        </div>
+
+        <div class="container3">          
+          <img src="" id="address-id" alt="img"> 
+          <a href="" class="address-link" id="address-btn" target="_blank" >Посмотреть в Google Map</a>           
+        </div>                
+    </form>
+  </div>  
+  <!-- End Address Modal -->
+  
+</body>
+<script src="static/js/menu.js"></script>
+<script src="static/js/banner-slide.js"></script>
+<script src="static/js/modal-window.js"></script>
+<script src="static/js/show-login-modal.js"></script>
+<script src="static/js/address-modal.js"></script>
+<script src="static/js/sticky-menu.js"></script>
+<script src="static/js/animation.js"></script>
+</html>

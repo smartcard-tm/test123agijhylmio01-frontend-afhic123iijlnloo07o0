@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="128x128" href="static/images/fav-icon.png">
+    <title>ORLAN</title>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a style="margin-top: 10px" href="#" onclick="openSideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,14 25,14" stroke="#1464c1" stroke-width="4" />
+          <path d="M0,23 20,23" stroke="#1464c1" stroke-width="4" />
+        </svg>
+      </a>
+    </span>
+    <ul class="navbar-nav">  
+      <a href="index.html">
+        <li style="display:inline-block;"><img class="logo-img" src="static/images/logo1.png" alt="Logo"/></li>
+        <li class="logoname">ORLAN</li>
+      </a>      
+       <div class="social">   
+        <li><a href="#" id="btnContact"><img class="social-link" src="static/images/social-icons/phone.png" alt="call"/></a></li> 
+        <li><a href="https://www.instagram.com/orlantm" target="_blank"><img class="social-link" src="static/images/social-icons/instagram.png" alt="instagram"/></a></li>   
+        <li><a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-link" src="static/images/social-icons/linkedin.png" alt="linkedin"/></a></li>   
+        <li><a href="https://www.facebook.com/orlantm/" target="_blank"><img class="social-link" style="margin-right:10px;" src="static/images/social-icons/facebook.png" alt="facebook"/></a></li>   
+      </div>      
+      <div class="lang_pack">          
+        <li><a href="#"><img class="lang_img" src="static/images/ru.png" alt="lang_img"/></a></li>   
+        <li><a href="#"><img class="lang_img" src="static/images/tm.png" alt="lang_img"/></a></li>   
+        <li><a href="#" style="margin-right:5px;"><img class="lang_img" src="static/images/en.png" alt="lang_img"/></a></li>   
+        <li><a href="#" id="btn-login"><img class="lang_img" src="static/images/user-default.png" alt="user_img"/></a></li>   
+      </div>             
+    </ul>
+  </nav>
+
+   <div id="side-menu" class="side-nav"> 
+    <div class="main-menu">
+      <a href="#" class="btn-close" onclick="closeSideMenu()" ><div class="back-btn-close"><img src="static/images/previous.png" alt="back-arrow" style="width:40px;"></div></a>
+      <a href="index.html"><img class="side-nav-logo" src="static/images/logo1.png" alt="Logo"/><span class="side-nav-logoname">ORLAN</span></a>
+      <a href="profile.html">Рустам Каррыев<span style="display:block;color:rgb(128, 126, 126); font-size:14px">+993 67101525</span></a>
+      <a href="index.html"><i class="material-icons inline-icon">home</i>На главную</a>
+      <a href="profile.html"><i class="material-icons inline-icon">manage_accounts</i>Личный кабинет</a>
+      <a href="#"><i class="material-icons inline-icon">credit_card</i>Платежные карты</a>
+      <a href="#"><i class="material-icons inline-icon">favorite</i>Избранное</a>
+      <a href="about-us.html"><i class="material-icons inline-icon">receipt_long</i>О нас</a> 
+    </div>     
+    <div class="bottom-main-menu">
+      <a href="#" id="btnContact1">Связаться с нами</a>   
+      <a href="#" style="margin-left:6%; padding-top:10px;"><i class="material-icons inline-icon">logout</i>Выйти из системы</a>
+    </div>   
+  </div>  
+
+  <div class="bottomMenu top-sticky-menu" id="stickyMenu" style="position:sticky; top:0; padding-top:60px; text-align:center; border-bottom:5px solid white;">
+    <div class="sticky-line-height">
+      <div class="sticky-inner-div">
+        <a href="search-job.html" class="sticky-link">
+          <i class="material-icons sticky-inline-icon">search</i>
+          ИЩУ РАБОТУ
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="development-center.html" class="sticky-link sticky-school">
+          <i class="material-icons sticky-inline-icon">school</i>
+          ЦЕНТР РАЗВИТИЯ
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="consulting.html" class="sticky-link">
+          <i class="material-icons sticky-inline-icon">headset_mic</i>
+          КОНСАЛТИНГ
+        </a>
+      </div>
+      <div class="sticky-inner-div">
+        <a href="outstaffing.html" class="sticky-link sticky-school">
+          <i class="material-icons sticky-inline-icon">group</i>
+          АУТСТАФФИНГ
+        </a>
+      </div>
+    </div>    
+  </div> 
+
+  <div class="main-content" style="margin-top:-65px;">
+    <div class="search-container-employee1 animate1">
+          <div class="tarif-plan">
+            <div class="tarif-inner">
+              <span>Ваш тариф: <br> BASIC</span>
+            </div>
+            <div class="tarif-inner2">
+              <a class="tarif-btn" href="account-type.html">
+                <div class="tarif-gen-btn">                
+                  <div class="btn-inner1">Хотите улучшить <br> и ускорить поиск</div>
+                  <div class="btn-inner2"><img src="static/images/up-arrow.png" alt="up-arrow"></div>
+                </div>
+              </a>
+            </div>  
+          </div>          
+          <p class="search-header-employee">ИЩУ СОТРУДНИКА</p>                    
+          <div class="search-btn-block-employee">
+            <input type="text" class="search-input-employee" placeholder="Профессия или должность">  
+            <input type="number" min="0" class="salary-input-employee" id="sal-inp1" placeholder="Зарплата TMT от...">
+            <input type="number" min="0" class="salary-input-employee" placeholder="Зарплата TMT до...">
+            
+            <select name="region" id="region">
+                <option value="region">Выберите регион</option>
+                <option value="ag">Ашхабад</option>
+                <option value="ahal-wel">Aхалский велаят</option>
+                <option value="ag">Туркменбаши</option>
+                <option value="ah">Балканский велаят</option>
+                <option value="mr">Мары</option>
+                <option value="mary-wel">Марыйский велаят</option>
+                <option value="lb">Туркменабад</option>
+                <option value="lebap-wel">Лебапский велаят</option>
+                <option value="dz">Дашогуз</option>
+                <option value="dashoguz-wel">Дашогузский велаят</option>
+            </select>
+            <div class="all-params">
+              <div class="experience-chk">
+                  <label class="region-container-employee">С опытом
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>  
+                  <label class="region-container-employee">Без опыта
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label> 
+                  <label class="region-container-employee">Стажер
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+              </div>            
+              <div class="experience-chk">
+                  <label class="region-container-employee">Полная занятость
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+                  <label class="region-container-employee">Частичная занятость
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+                  <label class="region-container-employee">Удаленная работа
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+              </div>
+              <div class="experience-chk">     
+                  <label class="region-container-employee">Проектная работа
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+                  <label class="region-container-employee">Одноразовая работа
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+                  <label class="region-container-employee">Вахтовая работа
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>
+              </div>
+              <div class="experience-chk">
+                  <label class="region-container-employee">Гос.организации
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>   
+                  <label class="region-container-employee">Местные компании
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label> 
+                  <label class="region-container-employee">Иностран. компании
+                  <input class="filter-checkbox" type="checkbox">
+                  <span class="checkmark-employee"></span>
+                  </label>     
+              </div>
+            </div>  
+            <button class="search-btn-employee">Найти</button>
+          </div>        
+    </div>
+    <div class="job-container">
+      <div class="job-card">        
+        <p class="job-header"><a href="employee-details.html" class="job-header-link">ИНЖЕНЕР СТРОИТЕЛЬ</a></p>
+        <p class="job-salary"><strong>5 000 - 7 000 TMT</strong></p>
+        <p class="gender"><i class="material-icons job-icon">wc</i>Мужчина</p>
+        <p class="job-city"><i class="material-icons job-icon">home</i>Ашхабад</з>
+        <p class="job-experience"><i class="material-icons job-icon">work_history</i>Опыт 7 лет</p>
+        <p  class="job-detailed-link"><a href="employee-details.html">посмотреть резюме...</a></p>
+        <button class="job-apply">Запрос на интервью</button>
+        <button class="job-show-contact">Показать контакты</button>
+      </div>
+     <div class="job-card">        
+        <p class="job-header"><a href="employee-details.html" class="job-header-link">ИНЖЕНЕР СТРОИТЕЛЬ</a></p>
+        <p class="job-salary"><strong>5 000 - 7 000 TMT</strong></p>
+        <p class="gender"><i class="material-icons job-icon">wc</i>Мужчина</p>
+        <p class="job-city"><i class="material-icons job-icon">home</i>Ашхабад</з>
+        <p class="job-experience"><i class="material-icons job-icon">work_history</i>Опыт 7 лет</p>
+        <p  class="job-detailed-link"><a href="employee-details.html">посмотреть резюме...</a></p>
+        <button class="job-apply">Запрос на интервью</button>
+        <button class="job-show-contact">Показать контакты</button>
+      </div>
+      <div class="job-card">        
+        <p class="job-header"><a href="employee-details.html" class="job-header-link">ИНЖЕНЕР СТРОИТЕЛЬ</a></p>
+        <p class="job-salary"><strong>5 000 - 7 000 TMT</strong></p>
+        <p class="gender"><i class="material-icons job-icon">wc</i>Мужчина</p>
+        <p class="job-city"><i class="material-icons job-icon">home</i>Ашхабад</з>
+        <p class="job-experience"><i class="material-icons job-icon">work_history</i>Опыт 7 лет</p>
+        <p  class="job-detailed-link"><a href="employee-details.html">посмотреть резюме...</a></p>
+        <button class="job-apply">Запрос на интервью</button>
+        <button class="job-show-contact">Показать контакты</button>
+      </div>
+      <div class="job-card">        
+        <p class="job-header"><a href="employee-details.html" class="job-header-link">ИНЖЕНЕР СТРОИТЕЛЬ</a></p>
+        <p class="job-salary"><strong>5 000 - 7 000 TMT</strong></p>
+        <p class="gender"><i class="material-icons job-icon">wc</i>Мужчина</p>
+        <p class="job-city"><i class="material-icons job-icon">home</i>Ашхабад</з>
+        <p class="job-experience"><i class="material-icons job-icon">work_history</i>Опыт 7 лет</p>
+        <p  class="job-detailed-link"><a href="employee-details.html">посмотреть резюме...</a></p>
+        <button class="job-apply">Запрос на интервью</button>
+        <button class="job-show-contact">Показать контакты</button>
+      </div>
+      <div class="job-card">        
+        <p class="job-header"><a href="employee-details.html" class="job-header-link">ИНЖЕНЕР СТРОИТЕЛЬ</a></p>
+        <p class="job-salary"><strong>5 000 - 7 000 TMT</strong></p>
+        <p class="gender"><i class="material-icons job-icon">wc</i>Мужчина</p>
+        <p class="job-city"><i class="material-icons job-icon">home</i>Ашхабад</з>
+        <p class="job-experience"><i class="material-icons job-icon">work_history</i>Опыт 7 лет</p>
+        <p  class="job-detailed-link"><a href="employee-details.html">посмотреть резюме...</a></p>
+        <button class="job-apply">Запрос на интервью</button>
+        <button class="job-show-contact">Показать контакты</button>
+      </div>
+    </div>
+  </div>
+<!-- Footer Start -->
+  <div class="footer">      
+    <div class="footer_content">     
+      <div class="phones">
+        <p class="footer-header">КАДРОВОЕ АГЕНСТВО:</p>          
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-04-37">+993 12 94-04-37</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 94-26-34">+993 12 94-26-34 </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 65 56-78-19">+993 65 56-78-19</a>
+        </p>         
+        <p>
+          <a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: operator@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-19:00
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб: 09:00-14:00; Вс: Выходной
+        </p>  
+        <p>
+          <span id="btn-address2" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>пр. Махтумкули, 73
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>ТЦ «Туркменистан», офис 61
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан.
+          </span>
+        </p> 
+      </div>
+      <div class="address">
+        <p class="footer-header">ЦЕНТР РАЗВИТИЯ И КОНСАЛТИНГ:</p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-86">+993 12 96-49-86</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Тел: <a class="phone-num" href="tel:+993 12 96-49-87">+993 12 96-49-87</a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">call</i>Моб: <a class="phone-num" href="tel:+993 63 10-59-21">+993 63 10-59-21</a>
+        </p>          
+        <p>
+          <a href="mailto:info@orlan.org" style="text-decoration:none; color:inherit">
+            <i class="material-icons inline-icon-footer">email</i>E-mail: info@orlan.org
+          </a>
+        </p>
+        <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Рабочее время: 09:00-18:00
+        </p>
+         <p>
+          <i class="material-icons inline-icon-footer">alarm</i>Сб/Вс: Выходной
+        </p>
+        <p>
+          <span id="btn-address1" class="p-address">
+          <i class="material-icons inline-icon-footer">pin_drop</i>ул. 1946 (Анкара), 23
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>БЦ «Рысгал», офис 810
+          <br><i class="material-icons inline-icon-footer" style="visibility: hidden">pin_drop</i>Ашхабад, Туркменистан. 
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="footer-social">            
+      <p style="margin-bottom:5px;">Подпишитесь и будьте в курсе интересных событий</p>
+      <div class="footer-social-icons">  
+        <a href="https://www.linkedin.com/company/orlantm/?viewAsMember=true" target="_blank"><img class="social-icons" style="margin-right:4px;" src="static/images/social-icons/linkedin.png" alt="icon"></a>
+        <a href="https://www.instagram.com/orlantm"  target="_blank"><img class="social-icons" src="static/images/social-icons/instagram-footer.png" alt="icon"></a>       
+        <a href="https://www.facebook.com/orlantm/"  target="_blank"><img class="social-icons" src="static/images/social-icons/facebook.png" alt="icon"></a>              
+      </div>
+    </div>      
+    <hr>
+    <p style="margin-top:20px;">&copy; Все права защищены “ORLAN” 2023</p>
+  </div>
+
+  <!-- End of Footer -->
+
+   <!-- Filter Modal window -->
+  <div id="id-filter" class="modal-filter">        
+    <form class="modal-content1 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id-filter').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            
+        </div>
+
+        <div class="container">
+            <input class="salary-input" type="number" min="0" placeholder="Зарплата TMT от..." name="salary_from">  
+            <input class="salary-input" type="number" min="0" placeholder="Зарплата TMT до..." name="salary_to">  
+            <label class="region-container-employee" style="margin-top:10px;">С опытом
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <label class="region-container-employee">Без опыта
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label> 
+            <label class="region-container-employee">Удаленная работа
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>
+             <label class="region-container-employee" style="margin-top:20px;">Гос.организации
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>   
+             <label class="region-container-employee">Местные компании
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label> 
+            <label class="region-container-employee">Иностранные компании
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <p style="color:#1464c1">Регион</p>
+            <label class="region-container-employee">Ашхабад
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <label class="region-container-employee">Ахалский велаят
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>            
+            <label class="region-container-employee">Туркменбаши
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>
+            <label class="region-container-employee">Балканский велаят
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <label class="region-container-employee">Мары
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>
+            <label class="region-container-employee">Марыйский велаят
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <label class="region-container-employee">Туркменабад
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>
+            <label class="region-container-employee">Лебапский велаят
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <label class="region-container-employee">Дашогуз
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>
+            <label class="region-container-employee">Дашогузский велаят
+              <input class="filter-checkbox" type="checkbox">
+              <span class="checkmark-employee"></span>
+            </label>  
+            <button>Применить</button>            
+        </div>                
+    </form>
+  </div>  
+  <!-- End of the Filter Modal window -->
+
+
+    <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="close_btn" class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p class="modal-service-name">КАДРОВОЕ АГЕНСТВО:</p>        
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-04-37"> +993 12 94-04-37</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Тел: <a class="phone-num-modal" href="tel: +993 12 94-26-34"> +993 12 94-26-34</a></p>
+        <p><i class="material-icons inline-icon-modal">call</i>Моб: <a class="phone-num-modal" href="tel: +993 65 56-78-19"> +993 65 56-78-19</a></p>
+        <p><a href="mailto:operator@orlan.org" style="text-decoration:none; color:inherit"><i class="material-icons inline-icon-modal">email</i>operator@orlan.org</a></p>
+      </div>       
+    </div>
+  </div>
+
+  <!-- End of the Modal window -->
+
+  <!-- Login Modal window -->
+  <div id="id01" class="modal1">        
+    <form class="modal-content1 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+            
+            <img src="static/images/logo1.png" alt="Logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <input type="text" placeholder="Номер телефона" name="u_phone" required>
+
+            <input type="password" placeholder="Пароль" name="u_psw" required>
+            <span class="psw"><a href="#">Забыли пароль?</a></span>   
+            <button type="submit">Войти</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="registerbtn">Регистрация</button>
+            
+        </div>                
+    </form>
+  </div>  
+  <!-- End of the Login Modal window -->
+
+  <!-- Signup Modal -->
+  <div id="id02" class="modal2">
+    
+    <form class="modal-content2 animate" action="">        
+      
+      <div class="container2">
+        <img src="static/images/logo1.png" alt="Logo" style="display:block; margin:0 auto; width:50px;">
+        <h1 style="margin-top:5px; margin-bottom:5px;text-align:center">Регистрация</h1>
+
+        <input type="text" placeholder="Ваше имя" name="name" required>
+
+        <input type="text" placeholder="Ваш номер" name="phone" required>
+
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+
+        <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+        
+        <p>Создавая учетную запись, вы соглашаетесь с<br><a href="#" style="color:dodgerblue">условиями и политикой конфиденциальности</a>.</p>
+
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Регистрация</button>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- End Signup Modal -->
+
+  <!-- Address Modal -->
+   <div id="id03" class="modal3">        
+    <form class="modal-content3 animate" action="" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close1" title="Close Modal" style="margin:15px;">&times;</span>
+        </div>
+
+        <div class="container3">          
+          <img src="" id="address-id" alt="img"> 
+          <a href="" class="address-link" id="address-btn" target="_blank" >Посмотреть в Google Map</a>           
+        </div>                
+    </form>
+  </div>  
+  <!-- End Address Modal -->
+  
+</body>
+<script src="static/js/menu.js"></script>
+<script src="static/js/modal-window.js"></script>
+<script src="static/js/show-login-modal.js"></script>
+<script src="static/js/address-modal.js"></script>
+<script src="static/js/filter-modal.js"></script>
+</html>
